@@ -9,7 +9,6 @@
  *
  */
 
-// g++ -g H:\GearLib\src\main.cpp H:\GearLib\src\domain\tracksLibrary.cpp H:\GearLib\src\domain\libraryConverter.cpp H:\GearLib\src\adapters\rekordboxAdapter.cpp H:\GearLib\src\adapters\fileIO.cpp H:\GearLib\src\adapters\virtualDJAdapter.cpp H:\GearLib\src\libraries\pugixml\pugixml.cpp H:\GearLib\src\libraries\cxxUrl\url.cpp -o H:\GearLib\src\main.exe -I H:\GearLib\src
 #include <iostream>
 
 #include <domain/libraryConverter.hpp>
