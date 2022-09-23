@@ -22,7 +22,9 @@ Convert mixing database from a software to another.
 
 ## Windows
 ```bash
-python make.py %cd%\src %cd%\build\main.exe
+cd ./build
+cmake -G "MinGW Makefiles" ..
+make # C:\MinGW\bin\mingw32-make.exe
 ```
 
 ## Unix
