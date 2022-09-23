@@ -1,2 +1,6 @@
-file(GLOB dto_headers *.hpp)
-file(GLOB dto_implementations *.cpp)
+add_library(
+	Dto
+	INTERFACE
+)
+
+target_include_directories(Dto INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}")
