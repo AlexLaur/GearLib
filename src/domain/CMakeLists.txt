@@ -8,5 +8,3 @@ add_library(
 	"${CMAKE_CURRENT_SOURCE_DIR}/tracksLibrary.hpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/tracksLibrary.cpp"
 )
-
-target_include_directories(Domain PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")

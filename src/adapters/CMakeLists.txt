@@ -7,5 +7,3 @@ add_library(
 	"${CMAKE_CURRENT_SOURCE_DIR}/virtualDJAdapter.hpp"
 	"${CMAKE_CURRENT_SOURCE_DIR}/virtualDJAdapter.cpp"
 )
-
-target_include_directories(Adapters PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
