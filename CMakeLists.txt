@@ -1,13 +1,18 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required (VERSION 3.10.3)
 
-set(CMAKE_BUILD_TYPE Release)
+project (GearLib LANGUAGES CXX C)
 
-if (WIN32)
-    set(CMAKE_CXX_COMPILER "C:\\msys64\\mingw64\\bin\\g++.exe")
-    set(CMAKE_C_COMPILER "C:\\msys64\\mingw64\\bin\\gcc.exe")
-    set(CMAKE_MAKE_PROGRAM "C:/MinGW/bin/mingw32-make.exe")
-endif (WIN32)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-project(GearLib)
+include(CTest)
+
+enable_testing()
 
 add_subdirectory(src)
+add_subdirectory(test)
+
+add_subdirectory(lib/googletest)
+
+add_subdirectory(app)

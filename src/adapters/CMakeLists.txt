@@ -1,2 +1,9 @@
-file(GLOB adapters_headers *.hpp)
-file(GLOB adapters_implementations *.cpp)
+add_library(
+	Adapters
+	"${CMAKE_CURRENT_SOURCE_DIR}/fileIO.hpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/fileIO.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/rekordboxAdapter.hpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/rekordboxAdapter.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/virtualDJAdapter.hpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/virtualDJAdapter.cpp"
+)
