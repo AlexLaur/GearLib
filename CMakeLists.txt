@@ -22,5 +22,5 @@ add_subdirectory(lib)
 # Linking
 target_link_libraries(
 	${CMAKE_PROJECT_NAME}
-	PRIVATE Adapters Dto Interfaces Domain CxxUrl
+	PRIVATE Adapters Domain
 )

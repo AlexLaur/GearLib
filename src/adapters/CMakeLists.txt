@@ -10,5 +10,5 @@ add_library(
 # Use pugixml in adapters
 target_link_libraries(
     Adapters
-    PUBLIC pugixml
+    PUBLIC pugixml CxxUrl
 )
