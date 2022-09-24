@@ -1,10 +1,11 @@
 add_subdirectory(dto)
 add_subdirectory(ports)
 
+file(GLOB DOMAIN_HEADERS *.hpp)
+file(GLOB DOMAIN_IMPLEMENTATIONS *.cpp)
+
 add_library(
 	Domain
-	"${CMAKE_CURRENT_SOURCE_DIR}/libraryConverter.hpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/libraryConverter.cpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/tracksLibrary.hpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/tracksLibrary.cpp"
+	${DOMAIN_HEADERS}
+	${DOMAIN_IMPLEMENTATIONS}
 )

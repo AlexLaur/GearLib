@@ -1,9 +1,14 @@
+file(GLOB ADAPTERS_HEADERS *.hpp)
+file(GLOB ADAPTERS_IMPLEMENTATIONS *.cpp)
+
 add_library(
 	Adapters
-	"${CMAKE_CURRENT_SOURCE_DIR}/fileIO.hpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/fileIO.cpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/rekordboxAdapter.hpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/rekordboxAdapter.cpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/virtualDJAdapter.hpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/virtualDJAdapter.cpp"
+	${ADAPTERS_HEADERS}
+	${ADAPTERS_IMPLEMENTATIONS}
+)
+
+# Use pugixml in adapters
+target_link_libraries(
+    Adapters
+    PUBLIC pugixml
 )

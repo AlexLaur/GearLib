@@ -13,7 +13,7 @@
 
 #include <string>
 
-#include <libraries/pugixml/pugixml.hpp>
+#include <pugixml.hpp>
 
 #include <domain/dto/track.hpp>
 #include <domain/dto/tags.hpp>

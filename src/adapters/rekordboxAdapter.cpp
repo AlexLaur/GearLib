@@ -15,7 +15,7 @@
 #include <vector>
 #include <tuple>
 
-#include <libraries/pugixml/pugixml.hpp>
+#include <pugixml.hpp>
 #include <libraries/cxxUrl/url.hpp>
 
 #include <domain/tracksLibrary.hpp>

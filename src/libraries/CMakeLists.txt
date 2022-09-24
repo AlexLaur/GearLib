@@ -1,2 +1,1 @@
 add_subdirectory(cxxUrl)
-add_subdirectory(pugixml)

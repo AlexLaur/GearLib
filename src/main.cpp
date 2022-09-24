@@ -26,5 +26,7 @@ int main(int argc, char *argv[])
     LibraryConverter converter = LibraryConverter(&file_io, &from_software, &to_software);
     converter.convert("H:\\collection.xml", "H:\\collection_out.xml");
 
+    std::cout << "File converted." << std::endl;
+
     return 0;
 }
