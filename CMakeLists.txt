@@ -6,12 +6,16 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-include(CTest)
-enable_testing()
+option(GEARLIB_BUILD_TESTS ON)
+
+if(GEARLIB_BUILD_TESTS)
+  add_subdirectory(test)
+  include(CTest)
+  enable_testing()
+endif()
 
 # Subdirs in this project
 add_subdirectory(src)
-add_subdirectory(test)
 
 # Executable
 add_executable (${CMAKE_PROJECT_NAME} src/main.cpp)
@@ -22,5 +26,5 @@ add_subdirectory(lib)
 # Linking
 target_link_libraries(
 	${CMAKE_PROJECT_NAME}
-	PRIVATE Adapters Domain
+	PRIVATE Adapters Domain argparse
 )
