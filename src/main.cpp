@@ -28,8 +28,6 @@ int main(int argc, char *argv[])
     // Argparse part
     argparse::ArgumentParser program("GearLib");
 
-    std::cout << PROJECT_NAME << std::endl;
-
     program.add_argument("from_software").help("the software which generated the 'input_file'"); // TODO include list of choices
     program.add_argument("input_file").help("the file from the software to convert");
     program.add_argument("to_software").help("convert the given library in the 'input_file' for this software");
