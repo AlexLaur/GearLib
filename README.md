@@ -33,3 +33,15 @@ cd ./build
 cmake ..
 make
 ```
+
+# Examples
+
+Help:
+```bash
+GearLib.exe -h
+```
+
+Convert a RekordBox Library to a VirtualDJ Library:
+```bash
+GearLib.exe rekordbox H:\\collection.xml virtualdj H:\\database.xml
+```
