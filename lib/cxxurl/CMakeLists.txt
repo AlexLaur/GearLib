@@ -13,6 +13,8 @@ set(PLATFORM UNKNOWN)
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
     set(PLATFORM LINUX)
     include(GNUInstallDirs)
+elseif (${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
+    set(PLATFORM WINDOWS)
 else ()
     # Sorry I don't have the time and environments to test the platforms
     # the baseline author provided.
