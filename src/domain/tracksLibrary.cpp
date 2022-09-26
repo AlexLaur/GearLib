@@ -21,15 +21,9 @@ private:
     std::string message;
 
 public:
-    TracksLibraryException(std::string message)
-    {
-        this->message = message;
-    }
+    TracksLibraryException(std::string message) { this->message = message; }
 
-    const char *what() const throw()
-    {
-        return this->message.c_str();
-    }
+    const char* what() const throw() { return this->message.c_str(); }
 };
 
 // ############################################################################
@@ -39,40 +33,28 @@ public:
  *
  * @param tracks
  */
-TracksLibrary::TracksLibrary(std::vector<Track> tracks)
-{
-    this->tracks = tracks;
-};
+TracksLibrary::TracksLibrary(std::vector<Track> tracks) { this->tracks = tracks; };
 
 /**
  * @brief Get all tracks of the TracksLibrary.
  *
  * @return std::vector<Track>
  */
-std::vector<Track> TracksLibrary::getTracks()
-{
-    return this->tracks;
-};
+std::vector<Track> TracksLibrary::getTracks() { return this->tracks; };
 
 /**
  * @brief The number of tracks in the TracksLibrary.
  *
  * @return int
  */
-int TracksLibrary::count() const
-{
-    return this->tracks.size();
-}
+int TracksLibrary::count() const { return this->tracks.size(); }
 
 /**
  * @brief Add a track into the TracksLibrary.
  *
  * @param track
  */
-void TracksLibrary::addTrack(Track track)
-{
-    this->tracks.push_back(track);
-}
+void TracksLibrary::addTrack(Track track) { this->tracks.push_back(track); }
 
 /**
  * @brief Get the track of the TracksLibrary at the given index.
@@ -84,7 +66,8 @@ Track TracksLibrary::trackAt(int index) const
     if (index >= this->count())
     {
         std::stringstream message;
-        message << "No tracks at the index (" << index << "). Max track index : (" << this->count() - 1 << ").";
+        message << "No tracks at the index (" << index << "). Max track index : ("
+                << this->count() - 1 << ").";
         throw TracksLibraryException(message.str());
     }
     return this->tracks.at(index);

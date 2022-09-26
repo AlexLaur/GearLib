@@ -27,7 +27,7 @@ std::string FileIO::readData(const std::string file_path)
     in_file.open(file_path); // open the input file
 
     std::stringstream str_stream;
-    str_stream << in_file.rdbuf();               // read the file
+    str_stream << in_file.rdbuf(); // read the file
     std::string file_content = str_stream.str(); // str holds the content of the file
     return file_content;
 }

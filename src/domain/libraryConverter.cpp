@@ -16,14 +16,15 @@
 #include <domain/tracksLibrary.hpp>
 #include <domain/libraryConverter.hpp>
 
-
-LibraryConverter::LibraryConverter(IDataIO* data_io, IDjingSoftware* from_software, IDjingSoftware* to_software){
+LibraryConverter::LibraryConverter(
+    IDataIO* data_io, IDjingSoftware* from_software, IDjingSoftware* to_software)
+{
     this->_data_io = data_io;
     this->_from_software = from_software;
     this->_to_software = to_software;
 };
 
-void LibraryConverter::convert(const std::string &input_file, const std::string &output_file)
+void LibraryConverter::convert(const std::string& input_file, const std::string& output_file)
 {
     std::string file_input_content = this->_data_io->readData(input_file);
     TracksLibrary library = this->_from_software->toLibrary(file_input_content);

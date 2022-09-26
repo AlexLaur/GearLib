@@ -22,8 +22,6 @@ enum SOFTWARES
     TRAKTOR
 };
 
-const std::map<std::string, int> SOFTWARES_NAME_MAPPING{
-    {"rekordbox", SOFTWARES::REKORDBOX},
-    {"virtualdj", SOFTWARES::VIRTUALDJ},
-    {"serato", SOFTWARES::SERATO},
-    {"traktor", SOFTWARES::TRAKTOR}};
+const std::map<std::string, int> SOFTWARES_NAME_MAPPING { { "rekordbox", SOFTWARES::REKORDBOX },
+    { "virtualdj", SOFTWARES::VIRTUALDJ }, { "serato", SOFTWARES::SERATO },
+    { "traktor", SOFTWARES::TRAKTOR } };

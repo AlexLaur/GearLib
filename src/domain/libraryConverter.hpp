@@ -24,5 +24,5 @@ private:
 
 public:
     LibraryConverter(IDataIO* data_io, IDjingSoftware* from_software, IDjingSoftware* to_software);
-    void convert(const std::string &input_file, const std::string &output_file);
+    void convert(const std::string& input_file, const std::string& output_file);
 };

@@ -16,6 +16,6 @@ class IDjingSoftware
 {
 
 public:
-    virtual TracksLibrary toLibrary(const std::string &fileContent) = 0;
-    virtual std::string fromLibrary(const TracksLibrary &tracksLibrary) = 0;
+    virtual TracksLibrary toLibrary(const std::string& fileContent) = 0;
+    virtual std::string fromLibrary(const TracksLibrary& tracksLibrary) = 0;
 };
