@@ -18,8 +18,6 @@
 #include <domain/ports/djingSoftwareInterface.hpp>
 
 #include <adapters/fileIO.hpp>
-#include <adapters/rekordboxAdapter.hpp>
-#include <adapters/virtualDJAdapter.hpp>
 #include <adapters/djingSoftwareAdapterFactory.hpp>
 
 int main(int argc, char* argv[])
