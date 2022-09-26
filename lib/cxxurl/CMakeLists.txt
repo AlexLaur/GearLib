@@ -24,18 +24,18 @@ endif()
 message("Platform: " ${CMAKE_SYSTEM_NAME} "-" ${PLATFORM})
 
 set(HEADERS
-    ${CMAKE_CURRENT_SOURCE_DIR}/url.hpp)
+    ${CMAKE_CURRENT_SOURCE_DIR}/cxxurl.hpp)
 
 set(SOURCES
     ${HEADERS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/url.cpp)
+    ${CMAKE_CURRENT_SOURCE_DIR}/cxxurl.cpp)
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 add_library(${PROJECT_NAME}_static STATIC ${SOURCES})
 SET_TARGET_PROPERTIES(${PROJECT_NAME}_static PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES SOVERSION 1)
-set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER url.hpp)
+set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER cxxurl.hpp)
 
 # install headers
 install(FILES ${HEADERS} DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/cxxurl")
