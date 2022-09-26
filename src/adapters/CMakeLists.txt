@@ -7,8 +7,8 @@ add_library(
 	${ADAPTERS_IMPLEMENTATIONS}
 )
 
-# Use pugixml in adapters
+# Use pugixml and cxxurl in adapters
 target_link_libraries(
     Adapters
-    PUBLIC pugixml CxxUrl
+    PUBLIC pugixml cxxurl
 )

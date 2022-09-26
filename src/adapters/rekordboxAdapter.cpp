@@ -16,7 +16,7 @@
 #include <tuple>
 
 #include <pugixml.hpp>
-#include <libraries/cxxUrl/url.hpp>
+#include <cxxurl.hpp>
 
 #include <domain/tracksLibrary.hpp>
 #include <domain/dto/track.hpp>
