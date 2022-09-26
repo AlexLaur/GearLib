@@ -4,9 +4,6 @@
 [submodule "lib/argparse"]
 	path = lib/argparse
 	url = https://github.com/p-ranav/argparse.git
-[submodule "lib/CxxUrl"]
-	path = lib/CxxUrl
-	url = https://github.com/chmike/CxxUrl.git
 [submodule "lib/pugixml"]
 	path = lib/pugixml
 	url = https://github.com/zeux/pugixml.git
